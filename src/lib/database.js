@@ -244,7 +244,7 @@ export async function testToken(authorization) {
 export async function init() {
 	const { token } = localStorage;
 
-	let internet = false;
+	let internet = true;
 
 	while (internet === false) {
 		internet = await testInternet();
